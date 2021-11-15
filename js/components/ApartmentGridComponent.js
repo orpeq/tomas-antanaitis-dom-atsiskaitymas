@@ -9,14 +9,34 @@ class ApartmentGridComponent {
 
     fetchApartments = () => 
     setTimeout(() => {
-    API.fetchApartments(this.saveApartments, alert);
+    API.fetchApartments(
+        (apartments) => {
+            this.state.loading = false;
+            this.saveApartments(apartments);
+        },
+        (err) => {
+        alert(err)
+        this.state.loading = false
+
+        this.render();
+        }
+        );
     }, 1000);
 
     saveApartments = (apartments) => {
         this.state.apartments = apartments;
-        this.state.loading = false;
+        
 
         this.render();
+    }
+
+    deleteApartment = (id) => {
+        API.deleteApartment(
+            id, 
+            () => API.fetchApartments(this.saveApartments, alert), 
+            alert
+            );
+
     }
 
     init = () => {
@@ -42,7 +62,10 @@ class ApartmentGridComponent {
         } else if(apartments.length > 0){
             this.htmlElement.innerHTML = '';
             const apartmentElements = apartments
-            .map(x => new ApartmentCardComponent(x))
+            .map(({id, ...props}) => new ApartmentCardComponent({
+                ...props,
+                onDelete: () => this.deleteApartment(id)
+            }))
             .map(x => x.htmlElement)
             .map(this.wrapInColumn)
             this.htmlElement.append(...apartmentElements);

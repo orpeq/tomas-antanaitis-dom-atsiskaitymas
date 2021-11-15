@@ -17,8 +17,8 @@ class ApartmentCardComponent{
         this.htmlElement.className = 'card shadow';
         this.htmlElement.innerHTML = `
         <img src="${imgSrc}" class="card-img-top" / height="300px" width="600px" style="object-fit: cover"/>
-        <span class="position-absolute top-50 ms-4 badge badge-secondary bg-success ">${formatedPrice}</span>
-        <div class="card-body"> 
+        <span class="badge badge bg-success ">Kaina: ${formatedPrice}</span>
+        <div class="card-body" / style="height:330px"> 
         
 
         <ul>
@@ -44,8 +44,14 @@ class ApartmentCardComponent{
         <h6><strong>Adresas</strong>  ${street}-${number}, ${city}, ${country}</h6>
         </li>
         </ul>
+        
+        <div class="text-center">
+            <button class="btn btn-danger">Ištrinti</button>
+        </div>
         </div>
         `
+        const btn = this.htmlElement.querySelector('.btn');
+        btn.addEventListener('click', onDelete);
     }
 
 }

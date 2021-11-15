@@ -1,92 +1,48 @@
 {
-    "apartments": [
-      {
-        "id": "1",
-        "type": "house",
-        "owner": {
-          "fullname": "Marius Liepgalis",
-          "email": "marius@lgg.lt",
-          "phone": "+3716769482"
-        },
-        "roomCount": 5,
-        "squares": 158.95,
-        "address": {
-          "city": "Vilnius",
-          "country": "Lietuva",
-          "street": "Žemėpačio g.",
-          "number": "34"
-        },
-        "price": {
-          "amount": 2489883,
-          "currency": "€"
-        },
-        "imgSrc": "https://c1.topbroker.lt/s3/photos/000/412/462/original.jpg"
+  "apartments": [
+    {
+      "id": "1",
+      "type": "house",
+      "owner": {
+        "fullname": "Marius Liepgalis",
+        "email": "marius@lgg.lt",
+        "phone": "+3716769482"
       },
-      {
-        "id": "2",
-        "type": "flat",
-        "owner": {
-          "fullname": "Danielius Kaupinis",
-          "email": "dann@gmail.com",
-          "phone": "+37010101010"
-        },
-        "roomCount": 2,
-        "squares": 45.33,
-        "address": {
-          "city": "Klaipėda",
-          "country": "Lietuva",
-          "street": "Prieplaukos g.",
-          "number": "32-1"
-        },
-        "price": {
-          "amount": 129878,
-          "currency": "$"
-        },
-        "imgSrc": "https://c1.topbroker.lt/s3/photos/000/353/489/original.jpg"
+      "roomCount": 5,
+      "squares": 158.95,
+      "address": {
+        "city": "Vilnius",
+        "country": "Lietuva",
+        "street": "Žemėpačio g.",
+        "number": "34"
       },
-      {
-        "id": "3",
-        "type": "cottage",
-        "owner": {
-          "fullname": "Gitanius Jausėdi",
-          "email": "moteryte@gmail.com",
-          "phone": "+37010101010"
-        },
-        "roomCount": 3,
-        "squares": 65.73,
-        "address": {
-          "city": "Kaunas",
-          "country": "Lietuva",
-          "street": "Atokaitos g.",
-          "number": "4-2"
-        },
-        "price": {
-          "amount": 239878,
-          "currency": "$"
-        },
-        "imgSrc": "https://c1.topbroker.lt/s3/photos/000/353/989/original.jpg"
+      "price": {
+        "amount": 2489883,
+        "currency": "€"
       },
-      {
-        "id": "4",
-        "type": "house",
-        "owner": {
-          "fullname": "Imantas Lapauskas",
-          "email": "imantas@gmail.com",
-          "phone": "+37068721638"
-        },
-        "roomCount": 6,
-        "squares": 250.98,
-        "address": {
-          "city": "Vilnius",
-          "country": "Lietuva",
-          "street": "Gulbių g.",
-          "number": "3"
-        },
-        "price": {
-          "amount": 1439878,
-          "currency": "€"
-        },
-        "imgSrc": "https://c1.topbroker.lt/s3/photos/000/344/534/original.jpg"
-      }
-    ]
-  }
+      "imgSrc": "https://c1.topbroker.lt/s3/photos/000/412/462/original.jpg"
+    },
+    {
+      "id": "2",
+      "type": "flat",
+      "owner": {
+        "fullname": "Danielius Kaupinis",
+        "email": "dann@gmail.com",
+        "phone": "+37010101010"
+      },
+      "roomCount": 2,
+      "squares": 45.33,
+      "address": {
+        "city": "Klaipėda",
+        "country": "Lietuva",
+        "street": "Prieplaukos g.",
+        "number": "32-1"
+      },
+      "price": {
+        "amount": 129878,
+        "currency": "$"
+      },
+      "imgSrc": "https://c1.topbroker.lt/s3/photos/000/353/489/original.jpg"
+    }
+  ]
+}
